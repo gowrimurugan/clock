@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.clock-holder{
+    width: 400px;
+    height: 400px;
+    background-color: palevioletred;
+}
+.dial{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 4px black;
+    position: relative;
+}
+
+.large-bar-holder{
+    height: 400px;
+    width: 10px;
+    /* border: 1px solid blue; */
+    position: absolute;
+    top: 0px;
+    left: 195px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.large-bar{
+    height: 20px;
+    width: 10px;
+    background-color: black;
+}
+
+.small-bar-holder{
+    height: 400px;
+    width: 4px;
+    /* border: 1px solid blue; */
+    position: absolute;
+    top: 0px;
+    left: 198px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    transform: rotate(6deg);
+}
+
+.small-bar{
+    height: 16px;
+    width: 4px;
+    background-color: black;
+}
+
+.center{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    top: 190px;
+    left: 190px;
+    z-index: 1;
+}
+
+.hour-hand-holder{
+    height: 400px;
+    width: 10px;
+    /* border: 1px solid blue; */
+    position: absolute;
+    top: 0px;
+    left: 195px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.hour-hand{
+    height: 100px;
+    width: 10px;
+    background-color: black;
+    margin-top: 100px;
+    border-radius: 50% 50% 0 0;
+}
+
+.min-hand-holder{
+    height: 400px;
+    width: 10px;
+    /* border: 1px solid blue; */
+    position: absolute;
+    top: 0px;
+    left: 195px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    transform: rotate(30deg);
+}
+
+.min-hand{
+    height: 150px;
+    width: 10px;
+    background-color: black;
+    margin-top: 50px;
+    border-radius: 50% 50% 0 0;
+}
+
+.button{
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+.number-holder{
+    height: 400px;
+    width: 20px;
+    position: absolute;
+    /* border: 1px solid blue; */
+    top: 0px;
+    left: 190px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px 0;
+    align-items: center;
+    font-size: 30px;
+}
+
+.holder1{
+    transform: rotate(30deg);
+}
+.holder1 *{
+    transform: rotate(-30deg);
+}
+
+.holder2{
+    transform: rotate(60deg);
+}
+.holder2 *{
+    transform: rotate(-60deg);
+}
+
+.holder3{
+    transform: rotate(90deg);
+}
+.holder3 *{
+    transform: rotate(-90deg);
+}
+
+.holder4{
+    transform: rotate(120deg);
+}
+.holder4 *{
+    transform: rotate(-120deg);
+}
+
+.holder5{
+    transform: rotate(150deg);
+}
+.holder5 *{
+    transform: rotate(-150deg);
+}
+
+
+
